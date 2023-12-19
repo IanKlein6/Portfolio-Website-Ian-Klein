@@ -1,4 +1,12 @@
-# .gitignore
+# Dependency directories
 node_modules/
+
+# Environment variables
+.env
+
+# Sanity build directory
+.sanity/
+
+# Operating System generated files
 .DS_Store
-node_modules/
+Thumbs.db
