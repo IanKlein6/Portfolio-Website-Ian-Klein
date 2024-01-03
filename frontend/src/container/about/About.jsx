@@ -5,9 +5,11 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
+// Component for the About section
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
+  // Fetch abouts data on component mount
   useEffect(() => {
     const query = '*[_type == "abouts"]';
 
@@ -18,7 +20,10 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">Turning Code into <span> Ecological Solutions</span> <br />Where Software <span>Meets Inovation</span></h2>
+      <h2 className="head-text">
+        Turning Code into <span> Ecological Solutions</span> <br />
+        Where Software <span>Meets Innovation</span>
+      </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -38,7 +43,6 @@ const About = () => {
     </>
   );
 };
-
 
 export default AppWrap(
   MotionWrap(About, 'app__about'),
