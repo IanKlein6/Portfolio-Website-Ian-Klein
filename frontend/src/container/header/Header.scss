@@ -134,7 +134,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    flex-direction: row;
+    flex-direction: column;     
     flex-wrap: wrap;
     margin-left: 0;
 
@@ -166,5 +166,10 @@
     margin: 2rem 0;
     flex-direction: column;
     justify-content: center;
+
+    img {
+      width: 30%; /* Smaller width for smaller screens */
+      
+    }
   }
 }

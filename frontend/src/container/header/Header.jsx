@@ -19,7 +19,7 @@ const scaleVariants = {
 
 const Header = () => {
   // Destructure images for cleaner code
-  const { flutter, redux, sass, profile } = images;
+  const { flutter, python, sass, profile } = images;
 
   return (
     <div className="app__header app__flex">
@@ -56,7 +56,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[flutter, redux, sass].map((circle, index) => (
+        {[flutter, python, sass].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="technology" />
           </div>
