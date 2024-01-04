@@ -19,7 +19,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/[your-username]/ianklein-portfolio.git
+   git clone https://github.com/[your-username]/Portfolio-Website-Ian-Klein.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -41,7 +41,7 @@ Contributions to improve Ian Klein's Portfolio are welcome. Please follow these 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature-branch-name`.
 3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the original branch: `git push origin ianklein-portfolio/feature-branch-name`.
+4. Push to the original branch: `git push origin Portfolio-Website-Ian-Klein/feature-branch-name`.
 5. Create the pull request.
 
 Alternatively, see the GitHub documentation on [creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
