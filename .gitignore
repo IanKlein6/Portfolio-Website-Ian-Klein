@@ -1,5 +1,7 @@
 # Dependency directories
 node_modules/
+build/
+Extra Images/
 
 # Environment variables
 .env
@@ -10,3 +12,5 @@ node_modules/
 # Operating System generated files
 .DS_Store
 Thumbs.db
+
+
