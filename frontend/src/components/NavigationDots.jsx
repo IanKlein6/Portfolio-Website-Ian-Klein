@@ -5,7 +5,7 @@ const NavigationDots = ({ active }) => {
   return (
     <div className='app__navigation'>
         {/* Mapping through each navigation item */}
-        {['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map((item, index) => (
+        {['home', 'about', 'work', 'skills', 'testimonial', 'contact'].map((item, index) => (
             <a 
                 href={`#${item}`} 
                 key={item + index} // Unique key for each dot
