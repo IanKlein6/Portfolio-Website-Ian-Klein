@@ -1,8 +1,9 @@
+/* Importing Google font DM Sans */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+/* Root element styling for defining CSS variables */
 :root {
   --font-base: "DM Sans", sans-serif;
-
   --primary-color: #b9cfb1;
   --secondary-color: #70AF1A;
   --black-color: #030303;
@@ -12,6 +13,7 @@
   --white-color: #ffffff;
 }
 
+/* Global box-sizing, padding, margin, and scroll behavior */
 * {
   box-sizing: border-box;
   padding: 0;

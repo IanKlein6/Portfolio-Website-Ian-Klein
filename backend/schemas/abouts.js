@@ -1,26 +1,25 @@
-export default{
-    name:'abouts',
-    title:'Abouts',
-    type: 'document',
-    fields:[
+export default {
+    name: 'abouts',  // Schema name
+    title: 'Abouts', // Display title
+    type: 'document', // Document type
+
+    // Document fields
+    fields: [
         {
-            name:'title',
-            title:'Title',
-            type:'string'
+            name: 'title', // Title field
+            title: 'Title',
+            type: 'string'
         },
         {
-            name:'description',
-            title:'Description',
-            type:'string'
+            name: 'description', // Description field
+            title: 'Description',
+            type: 'string'
         },
         {
-            name:'imgUrl',
-            title:'ImgUrl',
+            name: 'imgUrl', // Image URL field
+            title: 'ImgUrl',
             type: 'image',
-            options: {
-              hotspot: true,
-            },
+            options: { hotspot: true },
         },
-        
     ]
-}
+};

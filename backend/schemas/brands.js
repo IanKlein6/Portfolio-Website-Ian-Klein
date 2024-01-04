@@ -1,20 +1,23 @@
-export default{
-    name:'brands',
-    title:'Brands',
-    type: 'document',
-    fields:[
+export default {
+    name: 'brands', // Identifier for this schema
+    title: 'Brands', // Display name
+    type: 'document', // Defines a document type schema
+
+    fields: [
         {
-            name:'imgUrl',
-            title:'ImgUrl',
+            // Field for image URL
+            name: 'imgUrl',
+            title: 'ImgUrl',
             type: 'image',
             options: {
-              hotspot: true,
+                hotspot: true, // Enables image hotspot for flexible cropping
             },
         },
         {
-            name:'name',
-            title:'Name',
-            type:'string'
+            // Field for the brand name
+            name: 'name',
+            title: 'Name',
+            type: 'string'
         }
     ]
 }

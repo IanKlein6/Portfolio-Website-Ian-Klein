@@ -7,14 +7,17 @@ import { urlFor, client } from '../../client';
 import './Testimonial.scss';
 
 const Testimonial = () => {
+  // State for current testimonial index, testimonials data, and brands data
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
   const [brands, setBrands] = useState([]);
 
+  // Function to update the current testimonial index
   const handleClick = (index) => {
     setCurrentIndex(index);
   };
 
+  // Fetch testimonials and brands data on component mount
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
     const brandsQuery = '*[_type == "brands"]';
@@ -30,7 +33,8 @@ const Testimonial = () => {
 
   return (
     <>
-      {testimonials.length && (
+      {/* Display testimonials if available */}
+      {testimonials.length > 0 && (
         <>
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
@@ -43,11 +47,11 @@ const Testimonial = () => {
             </div>
           </div>
 
+          {/* Navigation buttons for testimonials */}
           <div className="app__testimonial-btns app__flex">
             <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
               <HiChevronLeft />
             </div>
-
             <div className="app__flex" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
               <HiChevronRight />
             </div>
@@ -55,6 +59,7 @@ const Testimonial = () => {
         </>
       )}
 
+      {/* Display brands if available */}
       <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div
