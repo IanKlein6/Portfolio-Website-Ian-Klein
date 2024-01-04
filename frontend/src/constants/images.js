@@ -1,11 +1,13 @@
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
+
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
 import flutter from '../assets/flutter.png';
 import git from '../assets/git.png';
+import github from '../assets/github.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
@@ -17,6 +19,13 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
+import visualstudio from '../assets/visualstudio.png';
+import angular from '../assets/angularjs.png';
+import django from '../assets/django.png';
+import docker from '../assets/docker.png';
+
+
+
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -38,12 +47,14 @@ import spotify from '../assets/spotify.png';
 export default {
   email,
   mobile,
+
   api,
   cpp,
   css,
   figma,
   flutter,
   git,
+  github,
   graphql,
   html,
   javascript,
@@ -55,13 +66,20 @@ export default {
   sass,
   typescript,
   vue,
+  visualstudio,
+  angular,
+  django,
+  docker,
+
   about01,
   about02,
   about03,
   about04,
+
   profile,
   circle,
   logo,
+
   adidas,
   amazon,
   asus,

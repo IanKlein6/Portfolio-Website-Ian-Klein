@@ -19,7 +19,7 @@ const scaleVariants = {
 
 const Header = () => {
   // Destructure images for cleaner code
-  const { flutter, python, sass, profile } = images;
+  const { django, python, react, profile } = images;
 
   return (
     <div className="app__header app__flex">
@@ -45,7 +45,7 @@ const Header = () => {
             <p className="p-text">Python, Django, Java</p>
           </div>
           <div className="tag-cmp app__flex">
-            <p className="p-text">Advocate for Sustainable Solutions</p>
+            <p className="head">Advocate for Sustainable Solutions</p>
           </div>
         </div>
       </motion.div>
@@ -56,7 +56,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[flutter, python, sass].map((circle, index) => (
+        {[django, python, react].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="technology" />
           </div>
