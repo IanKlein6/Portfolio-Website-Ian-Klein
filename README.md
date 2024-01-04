@@ -12,7 +12,8 @@ Ian Klein's Portfolio is a modern, responsive web application showcasing Ian's s
 ## Technologies Used
 - **React**: For building the user interface.
 - **SCSS**: For stylish and maintainable stylesheets.
-- [List other technologies and tools used in the project]
+- **Sanity**: Employed as the backend builder, providing a structured content management system.
+- **Netlify**: Used for deploying the web application, ensuring fast and reliable hosting services.
 
 ## Installation and Setup
 To run this project locally, follow these steps:
